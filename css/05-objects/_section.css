@@ -1,0 +1,39 @@
+/**
+ * OBJECTS - SECTION
+ * Espaciado vertical entre secciones
+ * Metodología: Mobile First + BEM + ITCSS Capa 5
+ */
+
+/* Mobile First */
+.o-section {
+    padding-block: var(--space-2xl);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .o-section {
+        padding-block: var(--space-3xl);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .o-section {
+        padding-block: var(--space-4xl);
+    }
+}
+
+/* Modificadores */
+.o-section--sm {
+    padding-block: var(--space-xl);
+}
+
+.o-section--lg {
+    padding-block: var(--space-4xl);
+}
+
+@media (min-width: 1024px) {
+    .o-section--lg {
+        padding-block: 8rem;
+    }
+}

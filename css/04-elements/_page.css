@@ -1,0 +1,21 @@
+/**
+ * ELEMENTS - PAGE
+ * Estilos base para html y body
+ * Metodología: Mobile First + ITCSS Capa 4
+ */
+
+html {
+    font-size: 16px;
+    scroll-padding-top: 80px;
+    /* Para navegación fixed */
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-normal);
+    color: var(--color-gray-900);
+    background-color: var(--color-white);
+    overflow-x: hidden;
+}

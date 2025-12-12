@@ -1,0 +1,204 @@
+/* ============================================================================
+   CRITICAL CSS - Above the Fold
+   Solo estilos necesarios para renderizar el primer pantallazo
+   ============================================================================ */
+
+/* Variables críticas */
+:root {
+    --color-primary: #C73E3A;
+    --color-secondary: #C9A870;
+    --color-text: #2C2C2C;
+    --color-text-light: #666666;
+    --color-background: #FFFFFF;
+    --font-primary: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-secondary: 'Dancing Script', cursive;
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --border-radius: 12px;
+    --transition: all 0.3s ease;
+}
+
+/* Reset mínimo */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    overflow-x: hidden
+}
+
+/* Top Bar */
+.top-bar {
+    background: #C73E3A;
+    color: #fff;
+    padding: 0.5rem 0;
+    font-size: 0.875rem
+}
+
+.top-bar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 1rem
+}
+
+.top-bar__info,
+.top-bar__social {
+    display: flex;
+    gap: 1.5rem
+}
+
+.top-bar__link {
+    color: #fff;
+    text-decoration: none
+}
+
+/* Header */
+.header {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 1rem
+}
+
+.header__logo-img {
+    height: 40px;
+    width: auto
+}
+
+/* Navigation */
+.nav__list {
+    display: flex;
+    gap: 2rem;
+    list-style: none
+}
+
+.nav__link {
+    color: #2C2C2C;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all .3s
+}
+
+.nav__link:hover,
+.nav__link--active {
+    background: #C73E3A;
+    color: #fff
+}
+
+/* Hero - Above the Fold */
+.hero {
+    position: relative;
+    height: 600px;
+    background: linear-gradient(135deg, #C73E3A 0%, #C9A870 100%);
+    color: #fff;
+    overflow: hidden
+}
+
+.hero__content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    padding: var(--spacing-xl)
+}
+
+.hero__title {
+    font-family: var(--font-secondary);
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-md)
+}
+
+.hero__subtitle {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-lg);
+    opacity: 0.95
+}
+
+.hero__cta {
+    display: inline-block;
+    background: #fff;
+    color: #C73E3A;
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15)
+}
+
+.hero__cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2)
+}
+
+/* Container básico */
+.o-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md)
+}
+
+/* Ocultar elementos móviles en desktop (above-the-fold) */
+.bottom-bar {
+    display: none
+}
+
+@media (max-width:768px) {
+    .top-bar {
+        display: none
+    }
+
+    .nav__list {
+        display: none
+    }
+
+    .bottom-bar {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+        z-index: 100
+    }
+
+    .hero {
+        height: 400px
+    }
+
+    .hero__title {
+        font-size: 2rem
+    }
+}

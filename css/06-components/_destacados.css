@@ -1,0 +1,42 @@
+/**
+ * =============================================================================
+ * DESTACADOS SECTION
+ * =============================================================================
+ * 
+ * Sección de productos destacados en página de inicio
+ */
+
+.destacados {
+    padding: var(--spacing-2xl) 0;
+}
+
+.destacados__title {
+    text-align: center;
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    color: #2C2C2C;
+    margin: 0 0 var(--spacing-xl) 0;
+}
+
+/* ========================================
+   TABLET (768px+)
+   ======================================== */
+@media (min-width: 768px) {
+    .destacados {
+        padding: var(--spacing-3xl) 0;
+    }
+
+    .destacados__title {
+        font-size: var(--font-size-4xl);
+        margin-bottom: var(--spacing-2xl);
+    }
+}
+
+/* ========================================
+   DESKTOP (1024px+)
+   ======================================== */
+@media (min-width: 1024px) {
+    .destacados__title {
+        font-size: var(--font-size-5xl);
+    }
+}

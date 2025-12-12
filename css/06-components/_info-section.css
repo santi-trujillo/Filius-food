@@ -1,0 +1,64 @@
+/**
+ * =============================================================================
+ * INFO SECTION
+ * =============================================================================
+ * 
+ * Secciones de información para página de Domicilios
+ * Con título y texto formateado
+ */
+
+.info-section {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.info-section__title {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    color: #2C2C2C;
+    margin: 0 0 var(--spacing-md) 0;
+}
+
+.info-section__subtitle {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    color: #2C2C2C;
+    margin: var(--spacing-lg) 0 var(--spacing-sm) 0;
+}
+
+.info-section__text {
+    font-size: var(--font-size-base);
+    color: #2C2C2C;
+    line-height: 1.7;
+    margin: 0 0 var(--spacing-md) 0;
+}
+
+.info-section__text strong {
+    font-weight: 600;
+    color: #2C2C2C;
+}
+
+/* ========================================
+   TABLET (768px+)
+   ======================================== */
+@media (min-width: 768px) {
+    .info-section {
+        margin-bottom: var(--spacing-3xl);
+    }
+
+    .info-section__title {
+        font-size: var(--font-size-3xl);
+    }
+
+    .info-section__text {
+        font-size: var(--font-size-lg);
+    }
+}
+
+/* ========================================
+   DESKTOP (1024px+)
+   ======================================== */
+@media (min-width: 1024px) {
+    .info-section__title {
+        font-size: var(--font-size-4xl);
+    }
+}

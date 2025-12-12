@@ -1,0 +1,78 @@
+/**
+ * =============================================================================
+ * MOBILE BOTTOM BAR
+ * =============================================================================
+ * 
+ * Barra de acción rápida fija en bottom (solo mobile)
+ * - Inicio
+ * - Llamar
+ * - WhatsApp
+ * - Ubicación
+ */
+
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: var(--z-floating);
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 0 calc(8px + env(safe-area-inset-bottom));
+}
+
+.bottom-bar__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #666666;
+    transition: color 0.3s ease;
+    min-width: 64px;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 8px;
+    position: relative;
+}
+
+.bottom-bar__item:hover,
+.bottom-bar__item--active {
+    color: var(--color-primary);
+}
+
+.bottom-bar__item:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+.bottom-bar__icon {
+    font-size: 20px;
+}
+
+/* Colores específicos para acciones */
+.bottom-bar__item--call {
+    color: var(--color-primary);
+}
+
+.bottom-bar__item--whatsapp {
+    color: #25D366;
+}
+
+.bottom-bar__item--call:focus,
+.bottom-bar__item--whatsapp:focus {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
+/* ========================================
+   TABLET Y SUPERIOR - OCULTAR
+   ======================================== */
+@media (min-width: 768px) {
+    .bottom-bar {
+        display: none;
+    }
+}

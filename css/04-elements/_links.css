@@ -1,0 +1,20 @@
+/**
+ * ELEMENTS - LINKS
+ * Estilos base para enlaces
+ * Metodología: ITCSS Capa 4
+ */
+
+a {
+  color: var(--color-primary);
+  transition: color var(--transition-fast);
+}
+
+a:hover,
+a:focus {
+  color: var(--color-primary-dark);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}

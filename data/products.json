@@ -1,0 +1,180 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Brownie de Chocolate",
+      "category": "postres",
+      "description": "Brownie de chocolate belga con nueces",
+      "price": 12000,
+      "image": "/assets/images/products/postres/brownie.jpg",
+      "featured": true,
+      "ingredients": ["Chocolate belga", "Nueces", "Huevos", "Azúcar"],
+      "available": true
+    },
+    {
+      "id": 2,
+      "name": "Cheesecake de Frutos Rojos",
+      "category": "postres",
+      "description": "Cheesecake cremoso con salsa de frutos rojos",
+      "price": 15000,
+      "image": "/assets/images/products/postres/cheesecake.jpg",
+      "featured": true,
+      "ingredients": ["Queso crema", "Frutos rojos", "Galletas", "Azúcar"],
+      "available": true
+    },
+    {
+      "id": 3,
+      "name": "Tiramisú Clásico",
+      "category": "postres",
+      "description": "Tiramisú italiano tradicional",
+      "price": 16000,
+      "image": "/assets/images/products/postres/tiramisu.jpg",
+      "featured": false,
+      "ingredients": ["Mascarpone", "Café", "Cacao", "Bizcochos"],
+      "available": true
+    },
+    {
+      "id": 4,
+      "name": "Mousse de Chocolate",
+      "category": "postres",
+      "description": "Mousse de chocolate oscuro suave y cremoso",
+      "price": 13000,
+      "image": "/assets/images/products/postres/mousse.jpg",
+      "featured": false,
+      "ingredients": ["Chocolate oscuro", "Crema", "Huevos", "Azúcar"],
+      "available": true
+    },
+    {
+      "id": 5,
+      "name": "Tres Leches",
+      "category": "postres",
+      "description": "Pastel tres leches suave y húmedo con crema batida",
+      "price": 14000,
+      "image": "/assets/images/products/postres/tres-leches.jpg",
+      "featured": true,
+      "ingredients": ["Leche condensada", "Leche evaporada", "Crema", "Huevos"],
+      "available": true
+    },
+    {
+      "id": 6,
+      "name": "Tarta de Chocolate",
+      "category": "postres",
+      "description": "Tarta de chocolate intenso con ganache",
+      "price": 18000,
+      "image": "/assets/images/products/postres/tarta-chocolate.jpg",
+      "featured": false,
+      "ingredients": ["Chocolate oscuro", "Ganache", "Masa quebrada", "Azúcar"],
+      "available": true
+    },
+    {
+      "id": 7,
+      "name": "Profiteroles",
+      "category": "postres",
+      "description": "Profiteroles rellenos de crema pastelera con chocolate",
+      "price": 20000,
+      "image": "/assets/images/products/postres/profiteroles.jpg",
+      "featured": true,
+      "ingredients": ["Masa choux", "Crema pastelera", "Chocolate", "Azúcar"],
+      "available": true
+    },
+    {
+      "id": 8,
+      "name": "Panna Cotta",
+      "category": "postres",
+      "description": "Panna cotta italiana con coulis de frutos rojos",
+      "price": 14000,
+      "image": "/assets/images/products/postres/panna-cotta.jpg",
+      "featured": false,
+      "ingredients": ["Crema", "Vainilla", "Frutos rojos", "Gelatina"],
+      "available": true
+    },
+    {
+      "id": 9,
+      "name": "Club Sandwich",
+      "category": "sanduches",
+      "description": "Triple sándwich clásico con pollo, tocino, tomate y lechuga",
+      "price": 18000,
+      "image": "/assets/images/products/sanduches/club-sandwich.jpg",
+      "featured": true,
+      "ingredients": ["Pollo", "Tocino", "Tomate", "Lechuga", "Mayonesa", "Pan de miga"],
+      "available": true
+    },
+    {
+      "id": 10,
+      "name": "Sándwich Vegetal",
+      "category": "sanduches",
+      "description": "Sándwich saludable con vegetales frescos y queso",
+      "price": 16000,
+      "image": "/assets/images/products/sanduches/vegetal.jpg",
+      "featured": true,
+      "ingredients": ["Lechuga", "Tomate", "Pepino", "Zanahoria", "Queso", "Pan integral"],
+      "available": true
+    },
+    {
+      "id": 11,
+      "name": "Sándwich de Pollo BBQ",
+      "category": "sanduches",
+      "description": "Sándwich de pollo con salsa BBQ casera y cebolla caramelizada",
+      "price": 19000,
+      "image": "/assets/images/products/sanduches/pollo-bbq.jpg",
+      "featured": false,
+      "ingredients": ["Pollo", "Salsa BBQ", "Cebolla caramelizada", "Queso cheddar", "Pan brioche"],
+      "available": true
+    },
+    {
+      "id": 12,
+      "name": "Sándwich de Atún",
+      "category": "sanduches",
+      "description": "Sándwich de atún con mayonesa casera y vegetales frescos",
+      "price": 17000,
+      "image": "/assets/images/products/sanduches/atun.jpg",
+      "featured": true,
+      "ingredients": ["Atún", "Mayonesa casera", "Cebolla", "Apio", "Lechuga", "Pan integral"],
+      "available": true
+    },
+    {
+      "id": 13,
+      "name": "Sándwich de Jamón y Queso",
+      "category": "sanduches",
+      "description": "Clásico sándwich de jamón serrano y queso suizo gratinado",
+      "price": 15000,
+      "image": "/assets/images/products/sanduches/jamon-queso.jpg",
+      "featured": false,
+      "ingredients": ["Jamón serrano", "Queso suizo", "Tomate", "Mostaza Dijon"],
+      "available": true
+    },
+    {
+      "id": 14,
+      "name": "Sándwich Caprese",
+      "category": "sanduches",
+      "description": "Sándwich italiano con mozzarella fresca, tomate y albahaca",
+      "price": 17000,
+      "image": "/assets/images/products/sanduches/caprese.jpg",
+      "featured": true,
+      "ingredients": ["Mozzarella fresca", "Tomate", "Albahaca", "Aceite de oliva", "Vinagre balsámico"],
+      "available": true
+    },
+    {
+      "id": 15,
+      "name": "Pulled Pork Sandwich",
+      "category": "sanduches",
+      "description": "Sándwich de cerdo deshilachado con salsa BBQ ahumada",
+      "price": 20000,
+      "image": "/assets/images/products/sanduches/pulled-pork.jpg",
+      "featured": false,
+      "ingredients": ["Cerdo deshilachado", "Salsa BBQ", "Coleslaw", "Pan brioche"],
+      "available": true
+    },
+    {
+      "id": 16,
+      "name": "Sándwich Mediterráneo",
+      "category": "sanduches",
+      "description": "Sándwich con vegetales asados, hummus y queso feta",
+      "price": 18000,
+      "image": "/assets/images/products/sanduches/mediterraneo.jpg",
+      "featured": true,
+      "ingredients": ["Vegetales asados", "Hummus", "Queso feta", "Aceitunas", "Pan pita"],
+      "available": true
+    }
+  ]
+}

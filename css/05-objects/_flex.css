@@ -1,0 +1,46 @@
+/**
+ * OBJECTS - FLEX
+ * Utilidades de flexbox reutilizables
+ * Metodología: BEM + ITCSS Capa 5
+ */
+
+.o-flex {
+  display: flex;
+  gap: var(--space-md);
+}
+
+/* Dirección */
+.o-flex--column {
+  flex-direction: column;
+}
+
+.o-flex--row-reverse {
+  flex-direction: row-reverse;
+}
+
+.o-flex--column-reverse {
+  flex-direction: column-reverse;
+}
+
+/* Alineación */
+.o-flex--center {
+  align-items: center;
+  justify-content: center;
+}
+
+.o-flex--between {
+  justify-content: space-between;
+}
+
+.o-flex--around {
+  justify-content: space-around;
+}
+
+.o-flex--end {
+  justify-content: flex-end;
+}
+
+/* Wrap */
+.o-flex--wrap {
+  flex-wrap: wrap;
+}

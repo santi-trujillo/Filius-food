@@ -1,0 +1,18 @@
+/**
+ * SHAME - HACKS TEMPORALES
+ * Código que necesita refactorización
+ * Metodología: ITCSS Capa 8
+ * 
+ * REGLAS:
+ * - Todos los hacks aquí deben tener un TODO comment
+ * - Especificar fecha y razón del hack
+ * - Mover a su lugar correcto cuando sea posible
+ */
+
+/* TODO: [Fecha] - [Razón del hack] */
+/* Ejemplo:
+ * TODO: 2025-12-09 - Fix temporal para Safari iOS
+ * .temporal-fix {
+ *   -webkit-transform: translateZ(0);
+ * }
+ */

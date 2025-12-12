@@ -1,0 +1,488 @@
+# Documento de Requerimientos del Proyecto
+## FiliusFood - Single Page Application
+
+---
+
+### 1. INFORMACIÓN GENERAL DEL PROYECTO
+
+**Nombre del Proyecto:** FiliusFood  
+**Tipo de Proyecto:** Single Page Application (SPA)  
+**Responsable:** Matias Daniel Trujillo Villarraga  
+**Fecha de Inicio:** [05/12/2025]  
+**Fecha de Entrega Estimada:** [DD/MM/AAAA]  
+**Versión del Documento:** 1.0  
+
+#### 1.1 Descripción del Negocio
+FiliusFood es un negocio especializado en la venta de postres y sándwiches que necesita presencia digital para facilitar pedidos y mostrar su catálogo de productos.
+
+#### 1.2 Objetivo del Proyecto
+[Describe en 2-3 frases qué problema específico resuelve este sitio web]
+Crear presencia digital para FiliusFood que elimine la necesidad de consulta 
+física, permitiendo a los clientes ver el menú completo, visualizar productos, 
+conocer ingredientes y precios antes de contactar por WhatsApp o visitar el 
+establecimiento.
+
+
+#### 1.3 Alcance
+- **Incluye:** [Lista lo que SÍ abarcará el proyecto]
+Single Page con todas sus secciones en una sola página
+Header
+Nav varias secciones
+Información básica del negocio
+Sección de postres
+Sección de sándwiches
+Sección de contacto
+Footer con redes sociales
+- **No Incluye:** [Lista lo que NO abarcará el proyecto en esta versión]
+Pasarela de pagos
+Carrito de compras
+Perfil
+formularios
+Barra de busqueda
+
+---
+
+### 2. STACK TECNOLÓGICO
+
+**Frontend:**
+- HTML5 (Semántico)
+- CSS3 (Custom Properties, Flexbox, Grid)
+- JavaScript Vanilla (ES6+)
+
+**Metodologías y Principios:**
+- Mobile First Architecture
+- Sistema Modular/Componentes
+- SEO Best Practices
+- Escalabilidad y Cascada CSS
+- UI/UX Best Practices
+- Build Process
+- BEM (Block Element Modifier)
+- Progressive Enhancement
+
+---
+
+### 3. ANÁLISIS DE USUARIOS
+
+#### 3.1 Usuario Primario
+- **Perfil:** [Edad, ocupación, ubicación]
+Cualquier edad, no importa ocupación, Ibagué
+- **Comportamiento:** [Cómo y cuándo usan internet para pedir comida]
+Todos
+- **Dispositivos:** [Móvil, tablet, desktop - porcentajes estimados]
+Todo tipo de dispositivo
+- **Nivel Técnico:** [Básico/Intermedio/Avanzado]
+Todos
+- **Motivaciones:** [Por qué visitarían FiliusFood]
+Información clara, variedad, Productos de calidad, valor familiar y de hogar
+- **Frustraciones:** [Qué problemas tienen con sitios similares]
+Competencia
+
+#### 3.2 Usuario Secundario
+[Si aplica, describe otros tipos de usuarios]
+
+---
+
+### 4. REQUERIMIENTOS FUNCIONALES
+
+#### Prioridad MUST HAVE (Críticos)
+| ID | Requerimiento | Descripción | Criterio de Aceptación |
+|----|--------------|-------------|------------------------|
+| RF-01 | Catálogo de Productos | El sitio debe mostrar todos los postres y sándwiches con imagen, nombre, descripción y precio | Usuario puede ver mínimo 10 productos con toda su información |
+| RF-02 | Botón Flotante WhatsApp | Botón fijo visible en toda la página que abre WhatsApp | Botón siempre visible, tamaño mínimo 56px, abre WhatsApp con mensaje predefinido |
+| RF-03 | CTAs de Contacto | Botones call-to-action en secciones clave | Mínimo 3 CTAs distribuidos: Hero, después del menú, en contacto |
+| RF-04 | Navegación SPA | Navegación fluida entre secciones sin recargar página | Transiciones suaves menores a 300ms |
+
+#### Prioridad SHOULD HAVE (Importantes)
+| ID | Requerimiento | Descripción |
+|----|--------------|-------------|
+| RF-05 | Filtro de Productos | Filtrar entre postres y sándwiches |
+| RF-06 | Horarios de Atención | Mostrar horarios y días disponibles |
+| RF-07 | Galería de Imágenes | Ampliar imágenes de productos |
+
+#### Prioridad COULD HAVE (Deseables)
+| ID | Requerimiento | Descripción |
+|----|--------------|-------------|
+| RF-08 | Productos Destacados | Sección de bestsellers |
+| RF-09 | Testimonios | Opiniones de clientes |
+| RF-10 | Mapa de Ubicación | Google Maps embebido |
+
+#### Prioridad WON'T HAVE (Fuera de alcance v1.0)
+- Sistema de pagos en línea
+- Registro de usuarios
+- Historial de pedidos
+- Panel de administración
+
+---
+
+### 5. REQUERIMIENTOS NO FUNCIONALES
+
+#### 5.1 Performance
+- **RNF-01:** Tiempo de carga inicial < 3 segundos en 4G
+- **RNF-02:** First Contentful Paint (FCP) < 1.8 segundos
+- **RNF-03:** Imágenes optimizadas (WebP, tamaño máximo 200KB)
+- **RNF-04:** CSS minificado < 50KB
+- **RNF-05:** JavaScript minificado < 100KB
+
+#### 5.2 Responsividad
+- **RNF-06:** Diseño responsive desde 320px hasta 1920px
+- **RNF-07:** Breakpoints: Mobile (320-767px), Tablet (768-1023px), Desktop (1024px+)
+- **RNF-08:** Touch targets mínimo 44x44px en móvil
+
+#### 5.3 Compatibilidad
+- **RNF-09:** Chrome 90+, Firefox 88+, Safari 14+, Edge 90+
+- **RNF-10:** iOS 13+ y Android 8+
+
+#### 5.4 SEO
+- **RNF-11:** Meta tags completos (title, description, og:image)
+- **RNF-12:** Estructura HTML semántica (header, nav, main, section, footer)
+- **RNF-13:** Alt text en todas las imágenes
+- **RNF-14:** Schema.org markup para LocalBusiness y MenuItem
+- **RNF-15:** Sitemap.xml y robots.txt
+
+#### 5.5 Accesibilidad
+- **RNF-16:** WCAG 2.1 Nivel AA
+- **RNF-17:** Contraste de color mínimo 4.5:1
+- **RNF-18:** Navegación por teclado funcional
+- **RNF-19:** Screen reader compatible (ARIA labels)
+
+#### 5.6 Seguridad
+- **RNF-20:** HTTPS obligatorio
+- **RNF-21:** Preparación para validación y sanitización de inputs (v2.0)
+- **RNF-22:** Headers de seguridad (CSP, X-Frame-Options)
+
+---
+
+### 6. HISTORIAS DE USUARIO
+
+#### HU-01: Visualizar Catálogo
+**Como** cliente potencial  
+**Quiero** ver el menú completo de postres y sándwiches con imágenes y precios  
+**Para** decidir qué productos me interesan comprar  
+
+**Criterios de Aceptación:**
+- [ ] Ver mínimo 2 categorías (postres, sándwiches)
+- [ ] Cada producto muestra: imagen, nombre, descripción breve, precio
+- [ ] Imágenes cargan en menos de 2 segundos
+- [ ] Grid responsive en móvil (1 columna) y desktop (3 columnas)
+
+---
+
+#### HU-02: Contactar por WhatsApp
+**Como** cliente interesado  
+**Quiero** contactar fácilmente a FiliusFood por WhatsApp  
+**Para** hacer consultas o pedidos de forma directa  
+
+**Criterios de Aceptación:**
+- [ ] Botón flotante de WhatsApp visible en todas las secciones
+- [ ] Click abre WhatsApp Web en desktop o app en móvil
+- [ ] Mensaje predefinido: "Hola FiliusFood, vi su página web y me gustaría información sobre sus productos"
+- [ ] Número de WhatsApp Business configurado y activo
+
+
+---
+
+#### HU-03: Navegación Móvil
+**Como** usuario móvil  
+**Quiero** navegar fácilmente por todas las secciones desde mi celular  
+**Para** hacer pedidos de forma rápida sin complicaciones  
+
+**Criterios de Aceptación:**
+- [ ] Menú hamburguesa funcional en mobile
+- [ ] Navegación entre secciones sin scroll perdido
+- [ ] Botones y enlaces con tamaño táctil adecuado (min 44px)
+- [ ] Sin zoom horizontal en ningún dispositivo
+
+---
+
+#### HU-04: Información de Contacto
+**Como** visitante  
+**Quiero** ver información de contacto, ubicación y horarios  
+**Para** saber cómo comunicarme o visitar FiliusFood  
+
+**Criterios de Aceptación:**
+- [ ] Sección de contacto con: dirección, teléfono, email, redes sociales
+- [ ] Horarios de atención visibles
+- [ ] Enlaces a redes sociales funcionales
+
+---
+
+#### HU-05: Carga Rápida
+**Como** usuario con conexión limitada  
+**Quiero** que la página cargue rápido  
+**Para** no perder tiempo esperando ni gastar muchos datos  
+
+**Criterios de Aceptación:**
+- [ ] Página interactiva en menos de 3 segundos en 4G
+- [ ] Lazy loading en imágenes de productos
+- [ ] Indicadores de carga visuales
+- [ ] Peso total de página < 1.5MB
+
+---
+
+### 7. ARQUITECTURA DE INFORMACIÓN
+
+#### 7.1 Secciones del Sitio
+1. **Hero/Inicio**
+   - Eslogan
+   - Call-to-action principal
+   - Imagen destacada
+
+2. **Sobre Nosotros**
+   - Historia breve de FiliusFood
+   - Propuesta de valor
+
+3. **Menú/Catálogo**
+   - Postres
+   - Sándwiches
+
+4. **Contacto**
+   - Dirección física
+   - Teléfono (clickeable con protocolo tel:)
+   - Email (clickeable con protocolo mailto:)
+   - Horarios de atención
+   - Botón principal de WhatsApp
+   - Enlaces a redes sociales (Instagram, Facebook)
+   - Mapa de ubicación (opcional)
+
+5. **Footer**
+   - Copyright
+   - Enlaces rápidos a secciones
+   - Redes sociales
+
+
+
+#### 7.2 Estructura de Archivos
+
+/FiliusFood
+├── index.html
+├── /css
+│   ├── main.css
+│   ├── components/
+│   │   ├── hero.css
+│   │   ├── about.css
+│   │   ├── product-card.css
+│   │   ├── contact.css
+│   │   └── footer.css
+│   └── utilities.css
+├── /js
+│   ├── main.js
+│   ├── components/
+│   │   ├── navigation.js
+│   │   └── products.js
+│   └── utils/
+│       └── whatsapp.js
+├── /assets
+│   ├── /images
+│   │   ├── /products
+│   │   │   ├── /postres
+│   │   │   └── /sandwiches
+│   │   ├── /icons
+│   │   └── /general
+│   └── /fonts
+└── /data
+    └── products.json
+
+
+---
+
+### 8. DISEÑO Y UI/UX
+
+#### 8.1 Paleta de Colores
+- **Principal:** [#HEXCODE] - [Describir uso] por definir
+- **Secundario:** [#HEXCODE] - [Describir uso] por definir
+- **Acento:** [#HEXCODE] - [CTAs, botones importantes] por definir
+- **Texto:** [#HEXCODE] - [Texto principal] por definir
+- **Fondo:** [#HEXCODE] - [Background] por definir
+
+#### 8.2 Tipografía
+- **Headings:** [Fuente] - [Tamaños: H1, H2, H3] por definir
+- **Body:** [Fuente] - [Tamaño base: 16px desktop, 14px mobile] por definir
+- **Fuente de Respaldo:** System fonts por definir
+
+#### 8.3 Espaciado
+- **Base:** 8px (usar múltiplos: 8, 16, 24, 32, 48, 64px) por definir
+
+#### 8.4 Principios UX
+- Máximo 3 clics para completar un pedido
+- Feedback visual en todas las interacciones
+- Mensajes de error claros y accionables
+- Loading states para acciones asíncronas
+
+---
+
+### 9. FLUJO DE DATOS
+
+#### 9.1 Flujo Principal: Consultar y Contactar
+
+1. Usuario ingresa al sitio → Carga inicial (HTML + CSS + JS)
+2. Usuario navega por secciones → Smooth scroll sin recargar
+3. Usuario visualiza catálogo → Lee products.json y renderiza
+4. Usuario ve producto de interés → Decide contactar
+5. Usuario hace click en botón WhatsApp → Abre WhatsApp
+6. WhatsApp pre-rellena mensaje → Usuario envía consulta
+
+
+
+#### 9.2 Gestión de Estado
+
+- **Productos:** JSON estático cargado al inicio (products.json)
+- **Navegación:** Estado en memoria para sección activa
+- **Sin persistencia:** No se requiere LocalStorage ni cookies
+
+
+---
+
+### 10. INTEGRACIONES EXTERNAS
+
+| Servicio | Propósito | Dependencia |
+|----------|-----------|-------------|
+| WhatsApp Business API | Envío de pedidos | Obligatoria |
+| Google Fonts | Tipografías web | Opcional (tener fallback) |
+| Google Maps | Ubicación | Opcional |
+| Google Analytics | Métricas | Opcional |
+
+---
+
+### 11. RESTRICCIONES Y DEPENDENCIAS
+
+#### 11.1 Restricciones Técnicas
+- No usar frameworks (React, Vue, Angular)
+- Solo JavaScript vanilla
+- Hosting estático (sin backend)
+
+#### 11.2 Restricciones de Tiempo
+- **Fase de Diseño:** [X días]
+- **Fase de Desarrollo:** [X días]
+- **Fase de Testing:** [X días]
+- **Lanzamiento:** [Fecha específica]
+
+#### 11.3 Restricciones de Recursos
+- Desarrollo individual
+- Presupuesto: [Si aplica]
+
+#### 11.4 Dependencias
+- Contenido (textos, imágenes de productos) proporcionado por FiliusFood
+- Número de WhatsApp Business activo
+- Hosting y dominio configurados
+
+---
+
+### 12. CRITERIOS DE ÉXITO
+
+#### 12.1 Métricas de Negocio
+- [ ] Mínimo 10 pedidos por semana vía WhatsApp
+- [ ] Reducción del 50% en llamadas telefónicas para pedidos
+- [ ] Aumento del ticket promedio en 20%
+
+#### 12.2 Métricas Técnicas
+- [ ] Google PageSpeed Score > 85
+- [ ] Tiempo de carga < 3 segundos
+- [ ] 0 errores críticos en consola
+- [ ] Tasa de conversión (visitante → pedido) > 5%
+
+#### 12.3 Métricas de Usuario
+- [ ] Tasa de rebote < 40%
+- [ ] Tiempo promedio en sitio > 2 minutos
+- [ ] 80% de tráfico desde móvil
+
+---
+
+### 13. PLAN DE TESTING
+
+#### 13.1 Testing Funcional
+- [ ] Todos los requerimientos MUST HAVE funcionan correctamente
+- [ ] Botón flotante de WhatsApp visible en todas las secciones
+- [ ] WhatsApp se abre con mensaje predefinido correcto
+- [ ] Navegación suave entre secciones funciona sin errores
+- [ ] Productos cargan correctamente desde JSON
+- [ ] Enlaces de contacto (tel: y mailto:) funcionan
+
+
+#### 13.2 Testing Responsive
+- [ ] iPhone SE (375px)
+- [ ] iPhone 12 Pro (390px)
+- [ ] Samsung Galaxy S20 (360px)
+- [ ] iPad (768px)
+- [ ] Desktop 1920px
+
+#### 13.3 Testing de Navegadores
+- [ ] Chrome (Windows, Mac, Android)
+- [ ] Safari (iOS, Mac)
+- [ ] Firefox (Windows)
+- [ ] Edge (Windows)
+
+#### 13.4 Testing de Performance
+- [ ] Google PageSpeed Insights
+- [ ] GTmetrix
+- [ ] WebPageTest
+
+#### 13.5 Testing de Accesibilidad
+- [ ] WAVE
+- [ ] Lighthouse Accessibility Score > 90
+- [ ] Prueba con screen reader
+
+---
+
+### 14. PLAN DE LANZAMIENTO
+
+#### 14.1 Pre-lanzamiento
+- [ ] Testing completo en staging
+- [ ] Contenido final aprobado
+- [ ] SEO configurado
+- [ ] Analytics instalado
+
+#### 14.2 Lanzamiento
+- [ ] Deploy a producción
+- [ ] Configuración DNS
+- [ ] SSL activo
+- [ ] Monitoreo activo primeras 48hrs
+
+#### 14.3 Post-lanzamiento
+- [ ] Recopilar feedback de usuarios reales
+- [ ] Analizar métricas primera semana
+- [ ] Hotfixes si necesario
+- [ ] Planear mejoras v1.1
+
+---
+
+### 15. MANTENIMIENTO Y ESCALABILIDAD
+
+#### 15.1 Mantenimiento Regular
+- Actualizar productos cada [Mes]
+- Revisar performance mensual
+- Actualizar contenido SEO
+- Backup semanal
+
+#### 15.2 Escalabilidad Futura (v2.0)
+- Sistema de pagos en línea
+- Panel de administración
+- Notificaciones push
+- Programa de fidelización
+- App móvil nativa
+
+---
+
+### 16. APROBACIONES
+
+| Rol | Nombre | Firma | Fecha |
+|-----|--------|-------|-------|
+| Desarrollador | Matias D. Trujillo | | |
+| Cliente | [Nombre FiliusFood] | | |
+
+---
+
+### 17. HISTORIAL DE VERSIONES
+
+| Versión | Fecha | Autor | Cambios |
+|---------|-------|-------|---------|
+| 1.0 | [DD/MM/AAAA] | Matias Trujillo | Documento inicial |
+
+---
+
+### 18. ANEXOS
+
+- Anexo A: Wireframes
+- Anexo B: Mockups de diseño
+- Anexo C: Diagrama de flujo de datos
+- Anexo D: Guía de estilo visual
+- Anexo E: Estructura de datos products.json

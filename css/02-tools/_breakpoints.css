@@ -1,0 +1,38 @@
+/**
+ * TOOLS - BREAKPOINTS
+ * Media queries reutilizables
+ * Metodología: Mobile First + ITCSS Capa 2
+ */
+
+/* ========================================
+   NOTA: En CSS vanilla no tenemos mixins,
+   pero documentamos los breakpoints aquí
+   para referencia en todo el proyecto
+   ======================================== */
+
+/*
+  BREAKPOINTS DISPONIBLES:
+  
+  Mobile:  320px - 767px  (base, sin media query)
+  Tablet:  768px - 1023px (min-width: 768px)
+  Desktop: 1024px+        (min-width: 1024px)
+  Wide:    1440px+        (min-width: 1440px)
+  
+  EJEMPLO DE USO:
+  
+  .component {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .component {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .component {
+      width: 33.333%;
+    }
+  }
+*/

@@ -1,0 +1,62 @@
+/**
+ * =============================================================================
+ * HEADER COMPONENT
+ * =============================================================================
+ * 
+ * Header fijo con logo circular centrado y menú dividido
+ * - Mobile: Hamburger menu
+ * - Desktop: Logo centrado con menú split (izquierda/derecha)
+ */
+
+.header {
+    position: fixed;
+    top: var(--top-bar-height);
+    left: 0;
+    right: 0;
+    z-index: var(--z-header);
+    background-color: #FFFFFF;
+    box-shadow: var(--shadow-header);
+    transition: box-shadow 0.3s ease;
+    height: var(--header-height-mobile);
+}
+
+.header--scrolled {
+    box-shadow: var(--shadow-md);
+}
+
+/* ========================================
+   MOBILE FIRST (320px+)
+   ======================================== */
+
+/* Ajuste del contenido principal para compensar el header fijo */
+.main {
+    margin-top: var(--header-offset-mobile);
+    padding-bottom: var(--bottom-bar-height);
+}
+
+/* ========================================
+   TABLET (768px+)
+   ======================================== */
+@media (min-width: 768px) {
+    .header {
+        height: var(--header-height-desktop);
+    }
+
+    .main {
+        margin-top: var(--header-offset-desktop);
+        padding-bottom: 0;
+    }
+}
+
+/* ========================================
+   DESKTOP (1024px+)
+   ======================================== */
+@media (min-width: 1024px) {
+    .header {
+        height: var(--header-height-desktop);
+    }
+
+    .main {
+        margin-top: var(--header-offset-desktop);
+    }
+}

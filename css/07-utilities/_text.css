@@ -1,0 +1,61 @@
+/**
+ * UTILITIES - TEXT
+ * Clases auxiliares de texto
+ * Metodología: Atomic CSS + ITCSS Capa 7
+ */
+
+/* Alineación */
+.u-text-left {
+    text-align: left !important;
+}
+
+.u-text-center {
+    text-align: center !important;
+}
+
+.u-text-right {
+    text-align: right !important;
+}
+
+/* Peso */
+.u-text-light {
+    font-weight: var(--font-weight-light) !important;
+}
+
+.u-text-normal {
+    font-weight: var(--font-weight-normal) !important;
+}
+
+.u-text-medium {
+    font-weight: var(--font-weight-medium) !important;
+}
+
+.u-text-semibold {
+    font-weight: var(--font-weight-semibold) !important;
+}
+
+.u-text-bold {
+    font-weight: var(--font-weight-bold) !important;
+}
+
+/* Transform */
+.u-text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.u-text-lowercase {
+    text-transform: lowercase !important;
+}
+
+.u-text-capitalize {
+    text-transform: capitalize !important;
+}
+
+/* Decoración */
+.u-text-underline {
+    text-decoration: underline !important;
+}
+
+.u-text-no-decoration {
+    text-decoration: none !important;
+}

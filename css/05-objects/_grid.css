@@ -1,0 +1,51 @@
+/**
+ * OBJECTS - GRID
+ * Sistema de grilla reutilizable
+ * Metodología: Mobile First + BEM + ITCSS Capa 5
+ */
+
+/* Mobile First - Base (1 columna) */
+.o-grid {
+    display: grid;
+    gap: var(--space-lg);
+    grid-template-columns: 1fr;
+}
+
+/* Tablet - 2 columnas */
+@media (min-width: 768px) {
+    .o-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .o-grid--cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Desktop - 3 columnas por defecto */
+@media (min-width: 1024px) {
+    .o-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .o-grid--cols-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Modificadores de gap */
+.o-grid--gap-sm {
+    gap: var(--space-sm);
+}
+
+.o-grid--gap-md {
+    gap: var(--space-md);
+}
+
+.o-grid--gap-lg {
+    gap: var(--space-lg);
+}
+
+.o-grid--gap-xl {
+    gap: var(--space-xl);
+}

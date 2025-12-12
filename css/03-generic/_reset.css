@@ -1,0 +1,135 @@
+/**
+ * GENERIC - RESET
+ * Reset CSS personalizado
+ * Metodología: ITCSS Capa 3
+ */
+
+/* ========================================
+   RESET UNIVERSAL
+   ======================================== */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========================================
+   ELEMENTOS BASE
+   ======================================== */
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* ========================================
+   TIPOGRAFÍA
+   ======================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    line-height: 1.2;
+}
+
+p {
+    margin: 0;
+}
+
+/* ========================================
+   ACCESIBILIDAD - MOVIMIENTO REDUCIDO
+   ======================================== */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ========================================
+   LISTAS
+   ======================================== */
+ul,
+ol {
+    list-style: none;
+}
+
+/* ========================================
+   ENLACES
+   ======================================== */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ========================================
+   IMÁGENES Y MEDIA
+   ======================================== */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ========================================
+   FORMULARIOS
+   ======================================== */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ========================================
+   TABLAS
+   ======================================== */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ========================================
+   UTILIDADES
+   ======================================== */
+/* Prevenir overflow de texto */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}

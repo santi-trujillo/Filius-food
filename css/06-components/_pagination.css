@@ -1,0 +1,86 @@
+/**
+ * =============================================================================
+ * PAGINATION
+ * =============================================================================
+ * 
+ * Paginación para catálogos de productos
+ */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacing-2xl);
+    margin-bottom: var(--spacing-xl);
+}
+
+.pagination__list {
+    display: flex;
+    gap: var(--spacing-xs);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pagination__button {
+    min-width: 40px;
+    height: 40px;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background-color: #FFFFFF;
+    color: #2C2C2C;
+    border: 1px solid #DDDDDD;
+    border-radius: 6px;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    font-family: var(--font-primary);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination__button:hover {
+    background-color: #FAFAFA;
+    border-color: #C9A870;
+}
+
+.pagination__button--active {
+    background-color: #C9A870;
+    color: #FFFFFF;
+    border-color: #C9A870;
+    cursor: default;
+}
+
+.pagination__button--active:hover {
+    background-color: #C9A870;
+}
+
+.pagination__button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ========================================
+   TABLET (768px+)
+   ======================================== */
+@media (min-width: 768px) {
+    .pagination__list {
+        gap: var(--spacing-sm);
+    }
+
+    .pagination__button {
+        min-width: 44px;
+        height: 44px;
+        font-size: var(--font-size-base);
+    }
+}
+
+/* ========================================
+   DESKTOP (1024px+)
+   ======================================== */
+@media (min-width: 1024px) {
+    .pagination__button {
+        min-width: 48px;
+        height: 48px;
+    }
+}

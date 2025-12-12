@@ -1,0 +1,27 @@
+/**
+ * ELEMENTS - BUTTONS
+ * Estilos base para elementos button
+ * Metodología: ITCSS Capa 4
+ */
+
+button {
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    transition: all var(--transition-fast);
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+button:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}

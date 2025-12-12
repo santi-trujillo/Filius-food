@@ -1,0 +1,22 @@
+/**
+ * SETTINGS - Z-INDEX
+ * Escala controlada de z-index para todo el proyecto
+ * Metodología: ITCSS Capa 1
+ */
+
+:root {
+    /* ========================================
+     ESCALA DE PROFUNDIDAD
+     ======================================== */
+    --z-index-base: 1;
+    --z-index-dropdown: 100;
+    --z-index-sticky: 200;
+    --z-index-fixed: 300;
+    --z-index-modal-backdrop: 400;
+    --z-index-modal: 500;
+    --z-index-popover: 600;
+    --z-index-tooltip: 700;
+    --z-index-notification: 800;
+    --z-index-whatsapp-float: 900;
+    --z-index-max: 999;
+}
