@@ -1,0 +1,40 @@
+/**
+ * UTILITIES - ACCESSIBILITY
+ * Clases auxiliares de accesibilidad
+ * Metodología: ITCSS Capa 7
+ */
+
+/* Screen Reader Only */
+.sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
+}
+
+/* Skip Link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--space-sm) var(--space-md);
+    z-index: var(--z-index-max);
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Focus Visible */
+.focus-visible:focus-visible {
+    outline: 2px solid var(--color-primary) !important;
+    outline-offset: 2px !important;
+}

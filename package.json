@@ -1,0 +1,31 @@
+{
+  "name": "filius-food",
+  "version": "1.0.0",
+  "description": "Filius Food - Chocolatería artesanal y postres gourmet en Pereira",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8080",
+    "start": "python3 -m http.server 8080",
+    "serve": "npx serve -l 8080",
+    "validate:html": "echo 'Validar HTML en https://validator.w3.org/'",
+    "validate:css": "echo 'Validar CSS en https://jigsaw.w3.org/css-validator/'",
+    "lighthouse": "echo 'Abrir Chrome DevTools > Lighthouse para auditoría'",
+    "test:accessibility": "echo 'Usar WAVE: https://wave.webaim.org/'",
+    "docs": "echo 'Ver documentación en /docs/'"
+  },
+  "keywords": [
+    "chocolateria",
+    "postres",
+    "pereira",
+    "artesanal",
+    "spa",
+    "vanilla-js",
+    "mobile-first",
+    "bem",
+    "itcss"
+  ],
+  "author": "Santiago Trujillo",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {}
+}

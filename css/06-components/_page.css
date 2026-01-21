@@ -1,0 +1,93 @@
+/**
+ * =============================================================================
+ * PÁGINAS - Estilos base
+ * =============================================================================
+ * 
+ * Sistema de SPA con hash routing:
+ * - Solo una página visible a la vez
+ * - Transiciones suaves entre páginas
+ */
+
+.page {
+    display: none;
+}
+
+.page--active {
+    display: block;
+    animation: page-fade-in 0.4s ease forwards;
+}
+
+/* ========================================
+   ANIMACIONES
+   ======================================== */
+
+@keyframes page-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Respetar preferencia de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+    .page {
+        animation: none;
+    }
+
+    @keyframes page-fade-in {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+/* ========================================
+   PAGE HEADER
+   ======================================== */
+
+.page-header {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+    padding-top: var(--spacing-xl);
+}
+
+.page-header__title {
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ========================================
+   TABLET (768px+)
+   ======================================== */
+@media (min-width: 768px) {
+    .page-header {
+        margin-bottom: var(--spacing-3xl);
+        padding-top: var(--spacing-2xl);
+    }
+
+    .page-header__title {
+        font-size: var(--font-size-4xl);
+    }
+}
+
+/* ========================================
+   DESKTOP (1024px+)
+   ======================================== */
+@media (min-width: 1024px) {
+    .page-header__title {
+        font-size: var(--font-size-5xl);
+    }
+}

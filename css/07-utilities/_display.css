@@ -1,0 +1,71 @@
+/**
+ * UTILITIES - DISPLAY
+ * Clases auxiliares de visibilidad y display
+ * Metodología: Mobile First + Atomic CSS + ITCSS Capa 7
+ */
+
+/* Display */
+.u-hidden {
+    display: none !important;
+}
+
+.u-block {
+    display: block !important;
+}
+
+.u-inline-block {
+    display: inline-block !important;
+}
+
+.u-flex {
+    display: flex !important;
+}
+
+.u-grid {
+    display: grid !important;
+}
+
+/* Visibilidad Mobile First */
+.u-visible-mobile {
+    display: block !important;
+}
+
+.u-hidden-mobile {
+    display: none !important;
+}
+
+@media (min-width: 768px) {
+    .u-visible-mobile {
+        display: none !important;
+    }
+
+    .u-hidden-mobile {
+        display: block !important;
+    }
+
+    .u-visible-tablet {
+        display: block !important;
+    }
+
+    .u-hidden-tablet {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .u-visible-tablet {
+        display: none !important;
+    }
+
+    .u-hidden-tablet {
+        display: block !important;
+    }
+
+    .u-visible-desktop {
+        display: block !important;
+    }
+
+    .u-hidden-desktop {
+        display: none !important;
+    }
+}

@@ -1,0 +1,15 @@
+/**
+ * GENERIC - BOX SIZING
+ * Border-box global
+ * Metodología: ITCSS Capa 3
+ */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}

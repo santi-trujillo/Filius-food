@@ -1,0 +1,159 @@
+/**
+ * SETTINGS - VARIABLES
+ * Custom Properties globales del proyecto
+ * Metodología: Mobile First + ITCSS Capa 1
+ */
+
+:root {
+    /* ========================================
+     COLORES - Paleta Chocolate Artesanal (Pastel Medio)
+     ======================================== */
+    /* Café Medio - Color brand principal (chocolate cálido) */
+    --color-primary: #9B7E6C;
+    --color-primary-dark: #846B5C;
+    --color-primary-light: #B0947F;
+
+    /* Chocolate Rosa/Mauve - Detalles elegantes (dulces) */
+    --color-secondary: #C49A9A;
+    --color-secondary-dark: #B08787;
+    --color-secondary-light: #D4ADAD;
+
+    /* Verde Salvia - Acento natural */
+    --color-accent: #A8B5A0;
+    --color-accent-orange: #9B7E6C;
+    
+    /* Lavanda Ceniza - Detalles sofisticados */
+    --color-accent-pink: #B4A5B0;
+    
+    /* Crema Cálido - Fondo suave */
+    --color-accent-blue: #F2EAE1;
+
+    /* Verde WhatsApp */
+    --color-whatsapp: #6BAA85;
+
+    /* Colores de Texto */
+    --color-text-primary: #2C2C2C;
+    --color-text-secondary: #666666;
+    --color-text-light: #999999;
+    --color-text-white: #FFFFFF;
+    --color-placeholder: #999999;
+
+    /* ========================================
+     DIMENSIONES - Layout
+     ======================================== */
+    /* Altura de componentes de header */
+    --top-bar-height: 36px;
+    --header-height-mobile: 75px;
+    --header-height-desktop: 80px;
+    --bottom-bar-height: 64px;
+
+    /* Offsets calculados */
+    --header-offset-mobile: calc(var(--top-bar-height) + var(--header-height-mobile));
+    /* 111px */
+    --header-offset-desktop: calc(var(--top-bar-height) + var(--header-height-desktop));
+    /* 116px */
+
+    /* Colores de Fondo */
+    --color-bg-primary: #F2EAE1;
+    --color-bg-secondary: #FAFAF8;
+    --color-bg-dark: rgba(0, 0, 0, 0.45);
+    --color-input-bg: #F8F4EF;
+
+    /* Bordes */
+    --color-border-light: #E5DDD3;
+    --color-border-medium: #D4C8BC;
+    --color-input-border: #D4C8BC;
+
+    /* Alias para compatibilidad */
+    --color-text: var(--color-text-primary);
+    --color-bg-light: var(--color-bg-secondary);
+    --color-border: var(--color-border-light);
+
+    /* Neutrales (mantener para casos especiales) */
+    --color-white: #FFFFFF;
+    --color-black: #1A1A1A;
+    --color-gray-100: #F8F9FA;
+    --color-gray-200: #E9ECEF;
+    --color-gray-300: #DEE2E6;
+    --color-gray-400: #CED4DA;
+    --color-gray-500: #ADB5BD;
+    --color-gray-600: #6C757D;
+    --color-gray-700: #495057;
+    --color-gray-800: #343A40;
+    --color-gray-900: #212529;
+
+    /* ========================================
+     ESPACIADO - Sistema de 8px
+     ======================================== */
+    --space-xs: 0.25rem;
+    /* 4px */
+    --space-sm: 0.5rem;
+    /* 8px */
+    --space-md: 1rem;
+    /* 16px */
+    --space-lg: 1.5rem;
+    /* 24px */
+    --space-xl: 2rem;
+    /* 32px */
+    --space-2xl: 3rem;
+    /* 48px */
+    --space-3xl: 4rem;
+    /* 64px */
+    --space-4xl: 6rem;
+    /* 96px */
+
+    /* Alias para compatibilidad con componentes */
+    --spacing-xs: var(--space-xs);
+    --spacing-sm: var(--space-sm);
+    --spacing-md: var(--space-md);
+    --spacing-lg: var(--space-lg);
+    --spacing-xl: var(--space-xl);
+    --spacing-2xl: var(--space-2xl);
+    --spacing-3xl: var(--space-3xl);
+    --spacing-4xl: var(--space-4xl);
+
+    /* ========================================
+     BREAKPOINTS - Mobile First
+     ======================================== */
+    --breakpoint-tablet: 768px;
+    --breakpoint-desktop: 1024px;
+    --breakpoint-wide: 1440px;
+
+    /* ========================================
+     CONTENEDORES
+     ======================================== */
+    --container-mobile: 100%;
+    --container-tablet: 720px;
+    --container-desktop: 1140px;
+    --container-wide: 1320px;
+
+    /* Padding de contenedores */
+    --container-padding-mobile: 16px;
+    --container-padding-tablet: 24px;
+    --container-padding-desktop: 32px;
+
+    /* ========================================
+     BORDER RADIUS
+     ======================================== */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-full: 9999px;
+
+    /* ========================================
+     SOMBRAS
+     ======================================== */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 2px 10px rgba(0, 0, 0, 0.08);
+    --shadow-header: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+
+    /* ========================================
+     TRANSICIONES
+     ======================================== */
+    --transition-fast: 150ms ease-in-out;
+    --transition-base: 300ms ease-in-out;
+    --transition-slow: 500ms ease-in-out;
+}

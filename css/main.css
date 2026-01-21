@@ -1,0 +1,86 @@
+/**
+ * FILIUS FOOD - MAIN CSS
+ * Orquestador de imports siguiendo metodología ITCSS
+ * 
+ * ORDEN ESTRICTO (nunca alterar):
+ * 1. Settings   - Variables
+ * 2. Tools      - Mixins/Funciones
+ * 3. Generic    - Resets
+ * 4. Elements   - Elementos HTML base
+ * 5. Objects    - Patrones de layout
+ * 6. Components - Componentes específicos
+ * 7. Utilities  - Helpers
+ * 8. Shame      - Hacks temporales
+ */
+
+/* ========================================
+   CAPA 1: SETTINGS
+   ======================================== */
+@import url('./01-settings/_variables.css');
+@import url('./01-settings/_typography.css');
+@import url('./01-settings/_z-index.css');
+
+/* ========================================
+   CAPA 2: TOOLS
+   ======================================== */
+@import url('./02-tools/_breakpoints.css');
+@import url('./02-tools/_animations.css');
+
+/* ========================================
+   CAPA 3: GENERIC
+   ======================================== */
+@import url('./03-generic/_reset.css');
+@import url('./03-generic/_box-sizing.css');
+
+/* ========================================
+   CAPA 4: ELEMENTS
+   ======================================== */
+@import url('./04-elements/_page.css');
+@import url('./04-elements/_headings.css');
+@import url('./04-elements/_links.css');
+@import url('./04-elements/_images.css');
+@import url('./04-elements/_buttons.css');
+
+/* ========================================
+   CAPA 5: OBJECTS
+   ======================================== */
+@import url('./05-objects/_container.css');
+@import url('./05-objects/_grid.css');
+@import url('./05-objects/_flex.css');
+@import url('./05-objects/_section.css');
+
+/* ========================================
+   CAPA 6: COMPONENTS
+   ======================================== */
+/* Layout */
+@import url('./06-components/_top-bar.css');
+@import url('./06-components/_header.css');
+@import url('./06-components/_nav.css');
+@import url('./06-components/_footer.css');
+@import url('./06-components/_whatsapp-float.css');
+@import url('./06-components/_bottom-bar.css');
+@import url('./06-components/_skip-link.css');
+@import url('./06-components/_page.css');
+
+/* Page Components */
+@import url('./06-components/_hero.css');
+@import url('./06-components/_destacados.css');
+@import url('./06-components/_product-grid.css');
+@import url('./06-components/_product-card.css');
+@import url('./06-components/_pagination.css');
+@import url('./06-components/_info-section.css');
+@import url('./06-components/_map-container.css');
+@import url('./06-components/_contact.css');
+
+/* ========================================
+   CAPA 7: UTILITIES
+   ======================================== */
+@import url('./07-utilities/_spacing.css');
+@import url('./07-utilities/_text.css');
+@import url('./07-utilities/_display.css');
+@import url('./07-utilities/_accessibility.css');
+
+/* ========================================
+   CAPA 8: SHAME
+   ======================================== */
+@import url('./08-shame/_shame.css');

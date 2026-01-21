@@ -1,0 +1,50 @@
+/**
+ * =============================================================================
+ * PRODUCT GRID
+ * =============================================================================
+ * 
+ * Grid responsivo para productos:
+ * - Mobile: 2 columnas
+ * - Tablet: 3 columnas
+ * - Desktop: 4 columnas
+ * - Gap adaptativo según breakpoint
+ */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Mobile: 2 columnas */
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-2xl);
+}
+
+/* ========================================
+   TABLET (768px+)
+   ======================================== */
+@media (min-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        /* Tablet: 3 columnas */
+        gap: var(--spacing-lg);
+    }
+}
+
+/* ========================================
+   DESKTOP (1024px+)
+   ======================================== */
+@media (min-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+        /* Desktop: 4 columnas */
+        gap: var(--spacing-xl);
+    }
+}
+
+/* ========================================
+   DESTACADOS (VARIANTE)
+   ======================================== */
+
+.product-grid--destacados {
+    /* Layout idéntico al grid base por ahora */
+    margin-bottom: var(--spacing-3xl);
+}

@@ -1,0 +1,46 @@
+/**
+ * ELEMENTS - HEADINGS
+ * Estilos base para encabezados h1-h6
+ * Metodología: Mobile First + ITCSS Capa 4
+ */
+
+/* Mobile First */
+h1 {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+    color: #2C2C2C;
+}
+
+h2 {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    line-height: var(--line-height-tight);
+    color: #2C2C2C;
+}
+
+h3 {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-2xl);
+    font-weight: 600;
+    line-height: var(--line-height-normal);
+    color: #2C2C2C;
+}
+
+h4 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-normal);
+}
+
+h5 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+}
+
+h6 {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+}

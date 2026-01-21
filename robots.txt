@@ -1,0 +1,14 @@
+# robots.txt para Filius Food
+# https://filiusfood.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Bloquear archivos sensibles
+Disallow: /data/
+Disallow: /docs/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Sitemap
+Sitemap: https://filiusfood.com/sitemap.xml

@@ -1,0 +1,22 @@
+/**
+ * ELEMENTS - IMAGES
+ * Estilos base para imágenes
+ * Metodología: ITCSS Capa 4
+ */
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    font-style: italic;
+    /* Muestra alt text con estilo si falla la carga */
+    /* Mejorar renderizado */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+/* Lazy loading placeholder */
+img[loading="lazy"] {
+    background: var(--color-gray-200);
+    transition: var(--transition-opacity);
+}
