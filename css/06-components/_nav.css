@@ -12,7 +12,7 @@
 
 .nav {
     position: relative;
-    padding: 0.5rem 0;
+    padding: 1.25rem 0;
 }
 
 .nav__container {
@@ -30,30 +30,25 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -35%);
+    transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    background-color: var(--color-secondary);
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: var(--shadow-md);
     transition: var(--transition-transform), var(--transition-shadow);
     z-index: 10;
 }
 
 .nav__logo:hover {
-    transform: translate(-50%, -35%) scale(1.05);
-    box-shadow: var(--shadow-lg);
+    transform: translate(-50%, -50%) scale(1.05);
 }
 
 .nav__logo-img {
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
-    filter: brightness(0) invert(1);
-    /* Hace el logo blanco */
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 /* ========================================
@@ -319,6 +314,50 @@
     .nav__toggle,
     .nav__mobile-menu {
         display: none;
+    }
+}
+
+/* ========================================
+   TABLET - Logo más grande
+   ======================================== */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .nav {
+        padding: 1.2rem 0;
+    }
+
+    .nav__logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .nav__logo-img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* ========================================
+   DESKTOP (1024px+)
+   ======================================== */
+@media (min-width: 1024px) {
+    /* Logo más grande en desktop */
+    .nav {
+        padding: 1rem 0;
+    }
+
+    .nav__logo {
+        width: 70px;
+        height: 70px;
+        transform: translate(-50%, -50%);
+    }
+
+    .nav__logo:hover {
+        transform: translate(-50%, -50%) scale(1.05);
+    }
+
+    .nav__logo-img {
+        width: 70px;
+        height: 70px;
     }
 }
 
